@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A.B Trading — Home</title>
+  <style>
+    :root {
+      --beige:#f5f5dc;
+      --brown:#5c4033;
+      --accent:#8b5e3c;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Arial, sans-serif; background:var(--beige); color:#333; }
+    header { background:var(--brown); color:#fff; padding:20px; text-align:center; }
+    nav { background:var(--accent); display:flex; gap:20px; justify-content:center; padding:10px; }
+    nav a { color:#fff; font-weight:700; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+
+    /* HERO with image background */
+    .hero {
+      position: relative;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background: url("images/Homepage.png") no-repeat center center;
+      background-size: cover;
+    }
+
+    /* dark overlay for readability */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(92, 64, 51, 0.5); /* brown transparent overlay */
+    }
+
+    .hero-content {
+      position: relative; /* keeps text above overlay */
+      max-width: 700px;
+      padding: 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+    }
+
+    .hero h2 { margin: 0 0 10px; font-size: 2.5rem; }
+    .hero p { margin: 0 0 20px; font-size: 1.2rem; }
+
+    .cta {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      border: 0; cursor: pointer; padding: 12px 18px; border-radius: 10px; font-weight: 700;
+      background:#fff; color:var(--brown); text-decoration: none;
+    }
+    .btn--ghost {
+      background: transparent;
+      color: #fff;
+      outline: 2px solid #fff;
+    }
+    .btn:hover { filter: brightness(.95); }
+
+    footer { text-align:center; padding:16px; background:var(--brown); color:#fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>A.B Trading</h1>
+    <p>Your trusted phone accessory dropshipping store</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Style Meets Durability</h2>
+      <p>Premium phone accessories for all types of phones — made to impress and to last.</p>
+      <div class="cta">
+        <a class="btn" href="shop.html">Shop Now</a>
+        <a class="btn btn--ghost" href="about.html">Why A.B Trading</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; 2025 A.B Trading. All rights reserved.</footer>
+</body>
+</html>
+

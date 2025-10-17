@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.B Trading - Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5dc;
+      color: #333;
+    }
+    header {
+      background: #5c4033;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #8b5e3c;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+    .filters {
+      padding: 20px;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      background: #5c4033;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .product button:hover {
+      background: #8b5e3c;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #5c4033;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>A.B Trading</h1>
+    <p>Shop Our Exclusive Phone Case Collection</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="filters">
+    <label for="phone-model">Filter by Phone Model:</label>
+    <select id="phone-model" name="phone-model">
+      <option value="all">All</option>
+      <option value="iphone">iPhone</option>
+      <option value="samsung">Samsung</option>
+      <option value="huawei">Huawei</option>
+      <option value="xiaomi">Xiaomi</option>
+    </select>
+  </div>
+
+  <section class="products">
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="images/classic silicone phone case.jpg" alt="Phone Case 1">
+      <h3>Classic iPhone Silicone Case</h3>
+      <p>Durable with many stylish colours of your choice.</p>
+      <p><strong>$3</strong></p>
+      <!-- example: add to your current product card -->
+      <button onclick="location.href='purchase.html?name=Classic%20iPhone%20Silicone%20Case&price=3&img=images/classic%20silicone%20phone%20case.jpg'">Buy</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="images/classic samsung silicone phonecase.jpg" alt="Phone Case 2">
+      <h3>Classic Samsung Silicone Case</h3>
+      <p>Classic shock-proof silicone case in many stylish colours.</p>
+      <p><strong>$3</strong></p>
+      <!-- example: add to your current product card -->
+      <button onclick="location.href='purchase.html?name=Classic%20Samsung%20Silicone%20Case&price=3&img=images/classic%20samsung%20silicone%20phonecase.jpg'">Buy</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product"><img src="images/threaded type-c charger.jpg" alt="Phone Case 3">
+      <h3>Threaded Fast Charger Type-C</h3>
+      <p>60w threaded fast charger type-C. Fully bendable, simple and durable design. More colours available.</p>
+      <p><strong>$5</strong></p>
+      <!-- example: add to your current product card -->
+      <button onclick="location.href='purchase.html?name=Threaded%20Fast%20Charger%20Type-C&price=5&img=images/threaded%20type-c%20charger.jpg'">Buy</button>
+    </div>
+
+    <!-- Product 4-->
+    <div class="product"><img src="images/tempered glass reusable.jpg" alt="Phone Case 4">
+      <h3>Auto-Align Tempered Glass</h3>
+      <p>Auto align tempered glass with Instalation kit. Anti-scratch, Anti-fingerprint</p>
+      <p><strong>$6</strong></p>
+      <!-- example: add to your current product card -->
+      <button onclick="location.href='purchase.html?name=Auto-Align%20Tempered%20Glass&price=6&img=images/tempered%20glass%20reusable.jpg'">Buy</button>
+    </div>
+
+    <!-- Product 5-->
+    <div class="product"><img src="images/case5.jpg" alt="Phone Case 5">
+      <h3>Case 5</h3><p>Elegant marble design.</p>
+      <p><strong>$7</strong>
+      </p><button onclick="location.href='purchase.html'">Buy</button>
+      <button onclick="location.href='inquire.html'">Inquire</button>
+    </div>
+
+    <!-- Product 6-->
+    <div class="product"><img src="images/case6.jpg" alt="Phone Case 6">
+      <h3>Case 6</h3><p>Transparent shockproof case.</p>
+      <p><strong>$4</strong></p><button onclick="location.href='purchase.html'">Buy</button>
+      <button onclick="location.href='inquire.html'">Inquire</button>
+    </div>
+
+    <!-- Product 7-->
+    <div class="product"><img src="images/case7.jpg" alt="Phone Case 7">
+      <h3>Case 7</h3><p>Premium leather-style finish.</p>
+      <p><strong>$10</strong></p><button onclick="location.href='purchase.html'">Buy</button>
+      <button onclick="location.href='inquire.html'">Inquire</button>
+    </div>
+
+    <!-- Product 8-->
+    <div class="product"><img src="images/case8.jpg" alt="Phone Case 8">
+      <h3>Case 8</h3><p>Ultra-thin slim fit case.</p>
+      <p><strong>$5</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case9.jpg" alt="Phone Case 9"><h3>Case 9</h3><p>Patterned protective cover.</p><p><strong>$8</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case10.jpg" alt="Phone Case 10"><h3>Case 10</h3><p>Glossy finish case.</p><p><strong>$6</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case11.jpg" alt="Phone Case 11"><h3>Case 11</h3><p>Soft-touch silicone cover.</p><p><strong>$5</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case12.jpg" alt="Phone Case 12"><h3>Case 12</h3><p>Carbon fiber look case.</p><p><strong>$9</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case13.jpg" alt="Phone Case 13"><h3>Case 13</h3><p>Designer print protective case.</p><p><strong>$12</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case14.jpg" alt="Phone Case 14"><h3>Case 14</h3><p>Luxury gold-trimmed case.</p><p><strong>$15</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case15.jpg" alt="Phone Case 15"><h3>Case 15</h3><p>Matte textured grip case.</p><p><strong>$7</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case16.jpg" alt="Phone Case 16"><h3>Case 16</h3><p>Clear glitter sparkle case.</p><p><strong>$8</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case17.jpg" alt="Phone Case 17"><h3>Case 17</h3><p>Classic rugged case.</p><p><strong>$9</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case18.jpg" alt="Phone Case 18"><h3>Case 18</h3><p>Premium soft leather case.</p><p><strong>$14</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case19.jpg" alt="Phone Case 19"><h3>Case 19</h3><p>Printed floral pattern case.</p><p><strong>$11</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+    <div class="product"><img src="images/case20.jpg" alt="Phone Case 20"><h3>Case 20</h3><p>Two-tone gradient case.</p><p><strong>$10</strong></p><button onclick="location.href='purchase.html'">Buy</button><button onclick="location.href='inquire.html'">Inquire</button></div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 A.B Trading. All rights reserved.</p>
+  </footer>
+</body>
+</html>
